@@ -8,6 +8,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/index.html" element={<Home />} /> {/* 👈 ADD THIS */}
+        <Route path="*" element={<Home />} /> {/* 👈 fallback */}
       </Routes>
     </Router>
   )
